@@ -2,6 +2,7 @@
     height: 100%;
     width: 24%;
     z-index: 1;
+    position: fixed
     top: 0;
     left: 0;
     background-color: black;
