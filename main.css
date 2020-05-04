@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 10%; 
+  width: 15%; 
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -26,8 +26,8 @@
 }
 
 body {
-    margin: 40px auto;
-    width: 90%;
+    margin: 5% auto;
+    width: 85%;
     background-color:rgb(255, 255, 255)
 }
 
@@ -50,11 +50,12 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     font-family: cursiveFont;
 }
 p {
     font-size: 1.5em;
+    font-family: handwriting;
     line-height: 1.4em;
     color: #333;
 }
@@ -73,8 +74,8 @@ ul.posts li {
 }
 
 @font-face{
-    font-family: cursiveFont;
-    src: url(michella_garden.woff);
+    font-family: cursiveFont, handwriting;
+    src: url(michella_garden.woff), url(cloudy.woff);
 }
 
 
