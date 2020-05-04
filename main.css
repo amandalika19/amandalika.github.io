@@ -26,13 +26,13 @@
 }
 
 body {
-    margin: 5% auto;
+    margin: 15% auto;
     width: 75%;
     background-color:rgb(255, 255, 255)
 }
 
 nav ul, footer ul {
-    font-family: 'cursiveFont';
+    font-family: cursiveFont;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -42,7 +42,7 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    font-family: 'cursiveFont';
+    font-family: cursiveFont;
     text-decoration: none;
     color: black;
 }
@@ -51,11 +51,11 @@ a:hover {
 }
 h1 {
     font-size: 5em;
-    font-family: 'cursiveFont';
+    font-family: cursiveFont;
 }
 p {
     font-size: 1.5em;
-    font-family: 'handwriting';
+    font-family: handwriting;
     line-height: 1.4em;
     color: #333;
 }
