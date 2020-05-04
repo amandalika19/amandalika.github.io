@@ -28,12 +28,12 @@
 
 body {
     margin: 80px auto;
-    width: 65%;
+    width: 75%;
     background-color:rgb(255, 255, 255)
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
