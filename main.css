@@ -74,8 +74,15 @@ ul.posts li {
 }
 
 @font-face{
-    font-family: cursiveFont, handwriting;
-    src: url(michella_garden.woff), url(cloudy.woff);
+    font-family: cursiveFont;
+    src: url(michella_garden.woff);
 }
+
+@font-face{
+    font-family: handwriting;
+    src: url(cloudy.woff);
+}
+
+
 
 
