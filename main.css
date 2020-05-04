@@ -55,7 +55,6 @@ h1 {
 }
 p {
     font-size: 1.5em;
-    font-family: handwriting;
     line-height: 1.4em;
     color: #333;
 }
@@ -77,12 +76,5 @@ ul.posts li {
     font-family: cursiveFont;
     src: url(michella_garden.woff);
 }
-
-@font-face{
-    font-family: handwriting;
-    src: url(cloudy.woff);
-}
-
-
 
 
