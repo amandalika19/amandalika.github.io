@@ -85,14 +85,26 @@
       src: url(cloudy.woff);
   }
   
-  @media (max-width: 479px) {
-     body {
+  @media (max-width: 500px) {
+    .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 35%; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; 
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    }
+    body {
       margin: 1px;
       padding-top: 1px;
       padding-left: 200px;
-      width: 50%;
+      width: 70%;
       background-color:rgb(255, 255, 255)
-     }
+    }
   }
+  
   
   
