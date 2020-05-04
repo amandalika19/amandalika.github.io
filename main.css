@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%; /* 100% Full-height */
-  width: 15%; 
+  width: 25%; 
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -15,7 +15,6 @@
     text-decoration: none;
     color: white;
     display: block;
-    transition: 0.3s;
 }
 
 .sidenav a:hover {
@@ -27,9 +26,15 @@
 }
 
 body {
+<<<<<<< HEAD
     margin: 80px auto;
     width: 75%;
     background-color:rgb(255, 255, 255)
+=======
+    margin: 150px auto;
+    width: 45%;
+    background-color:rgb(55, 255, 255)
+>>>>>>> 5bfddfd9dfdf44897e1d99789e3d93b38b4efcdd
 }
 
 nav ul, footer ul {
