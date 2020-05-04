@@ -29,7 +29,7 @@
       margin: 1px;
       padding-top: 1px;
       padding-left: 15%;
-      width: 50%;
+      width: width;
       background-color:rgb(255, 255, 255)
   }
   
@@ -101,7 +101,7 @@
       margin: 1px;
       padding-top: 1px;
       padding-left: 22%;
-      width: 100%;
+      width: window.width;
       background-color:rgb(255, 255, 255)
     }
   }
