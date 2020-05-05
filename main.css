@@ -15,7 +15,7 @@
       text-decoration: none;
       color: white;
       /* display: ; */
-      font-size: 45px;
+      font-size: 4em;
       font-family: cursiveFont;
   }
   
@@ -57,8 +57,8 @@
   }
   h2 {
     margin: 1em;
-    font-size: 10em;
-    font-family: cursiveFont;
+    font-size: 8em;
+    font-family: handwritten1;
   }
   h3 {
     margin: 1em;
