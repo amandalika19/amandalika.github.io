@@ -15,15 +15,12 @@
       text-decoration: none;
       color: white;
       display: block;
+      font-size: 27px;
+      font-family: cursiveFont;
   }
   
   .sidenav a:hover {
       color: rgb(78, 180, 228);
-  }
-  
-  .sidenav a {
-      font-size: 27px;
-      font-family: cursiveFont;
   }
   
   body {
