@@ -23,18 +23,19 @@
   
   .sidenav a {
       font-size: 27px;
+      font-family: cursiveFont;
   }
   
   body {
       margin: 1px;
       padding-top: 1px;
       padding-left: 15%;
-      width: window.width;
+      width: 100vw;
       background-color:rgb(255, 255, 255)
   }
   
   nav ul, footer ul {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: cursiveFont;
       padding: 0px;
       list-style: none;
       font-weight: bold;
@@ -101,7 +102,7 @@
       margin: 1px;
       padding-top: 1px;
       padding-left: 22%;
-      width: window.width;
+      width: 100vw;
       background-color:rgb(255, 255, 255)
     }
   }
