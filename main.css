@@ -52,13 +52,20 @@
   h1 {
       font-size: 8em;
       font-family: cursiveFont;
+      padding-right: 30px;
+      float: left;
   }
   h2 {
-    margin: 4em;
-    font-size: 5em;
-    font-family: cursiveFont;
-}
+    margin: 1em;
+    font-size: 3em;
+    font-family: handwriting;
+  }
+  .img1{
+      padding-right: 30px;
+      padding-top: 40px;
+  }
   p {
+      margin-left: 3rem;
       font-size: 1.5em;
       font-family: handwriting;
       line-height: 1.4em;
