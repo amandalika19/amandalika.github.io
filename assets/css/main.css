@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%; 
-    width: 16%; 
+    width: 15%; 
     position: fixed; 
     z-index: 1; 
     top: 0; 
@@ -59,7 +59,7 @@
   }
   h2 {
     padding-left:30px;
-    font-size: 10em;
+    font-size: 5em;
     font-family: cursiveFont;
   }
   h3 {
@@ -72,13 +72,14 @@
   }
   p {
       margin-left: 1rem;
-      font-size: 1.5em;
+      font-size: 3em;
       font-family: handwritten1;
-      line-height: 1.4em;
+      /* line-height: 1.4em; */
       color: #333;
   }
   footer {
     border-top: 1px solid #d5d5d5;
+    margin-bottom: 50px;
     padding: 8px 8px 30px 12px;
     text-decoration: none;
     color: white;
@@ -98,17 +99,17 @@
   
   @font-face{
       font-family: cursiveFont;
-      src: url(fonts/michella_garden.woff);
+      src: url(assets/fonts/michella_garden.woff);
   }
   
   @font-face{
       font-family: handwritten1;
-      src: url(fonts/cloudy.woff);
+      src: url(assets/fonts/cloudy.woff);
   }
 
   @font-face{
     font-family: handwritten2;
-    src: url(fonts/a_little_sunshine.woff);
+    src: url(assets/fonts/a_little_sunshine.woff);
 }
   
   @media (max-width: 1078px) {
