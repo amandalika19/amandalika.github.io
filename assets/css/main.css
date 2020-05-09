@@ -99,17 +99,17 @@
   
   @font-face{
       font-family: cursiveFont;
-      src: url(css/fonts/michella_garden.woff);
+      src: url(michella_garden.woff);
   }
   
   @font-face{
       font-family: handwritten1;
-      src: url(css/fonts/cloudy.woff);
+      src: url(cloudy.woff);
   }
 
   @font-face{
     font-family: handwritten2;
-    src: url(css/fonts/a_little_sunshine.woff);
+    src: url(a_little_sunshine.woff);
 }
   
   @media (max-width: 1078px) {
