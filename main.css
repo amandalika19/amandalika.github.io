@@ -58,11 +58,11 @@
   }
   h2 {
     padding-left:30px;
-    font-size: 10em;
+    font-size: 6em;
     font-family: cursiveFont;
   }
   h3 {
-    font-size: 5em;
+    font-size: 3em;
     font-family: handwritten2;
   }
   .img1{
@@ -70,6 +70,7 @@
       padding-top: 40px;
   }
   .icon{
+      padding-left:15%;
       height: 60px;
   }
   .icon:hover {
