@@ -279,6 +279,7 @@ header {
     -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
+    font: cursiveFont;
 }
 
 .middle-bar {
@@ -370,6 +371,21 @@ header .name-logo {
     100%{
         background-size: 100% 0.1em;
     }
+}
+
+@font-face{
+    font-family: cursiveFont;
+    src: url(fonts/michella_garden.woff);
+}
+
+@font-face{
+    font-family: handwritten1;
+    src: url(fonts/cloudy.woff);
+}
+
+@font-face{
+  font-family: handwritten2;
+  src: url(fonts/a_little_sunshine.woff);
 }
 
 /*
@@ -468,6 +484,8 @@ Banner
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
+    font: cursiveFont;
+
 }
 
 .banner {
@@ -498,6 +516,8 @@ Banner
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
+    font: handwritten1;
+
 }
 
 .scroll {
@@ -612,18 +632,6 @@ Social Links
     max-width: 40px;
 }
 
-
-/*
-=====================================
-About
-=====================================
-*/
-
-/*
-=====================================
-Projects
-=====================================
-*/
 .grid-container {
     display: -ms-grid;
     display: grid;
