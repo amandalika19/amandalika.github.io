@@ -597,19 +597,7 @@ Contact
     height: 80vh;
 }
 
-/*
-=====================================
-Resume
-=====================================
-*/
-
-
-
-/*
-=====================================
-Media Querys
-=====================================
-*/
+/* ==== Media Querys ==== */
 
 @media screen and (min-width: 1200px) {
     .container {
@@ -623,6 +611,8 @@ Media Querys
     #toggle {
         display: none;
     }
+
+    
 }
 
 /* .container max-width changes for 1200px
@@ -694,6 +684,12 @@ test to change for other screen sizes */
         -webkit-transition: none;
         -o-transition: none;
         transition: none;
+        font-size:1.2em;
+        font-weight: 700;
+        font-family: handwritten2;
+
+
+        color: white;
     }
 
     .filler {
