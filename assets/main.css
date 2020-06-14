@@ -218,7 +218,7 @@ font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #000;
+    background-color: #fff;
 }
 
 body:hover {
@@ -511,7 +511,7 @@ Banner
     display: inline-block;
     margin-top: 20px;
     background: #fff;
-    color: #000;
+    color: #fff;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.2em;
@@ -688,7 +688,7 @@ Social Links
 }
 
 #project-popup div {
-    background-color: #000;
+    background-color: #fff;
     padding: 10px 20px;
     width: 84px;
 }
