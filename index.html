@@ -30,7 +30,7 @@
                 <section class="container">
                     <div class="content">
                         <h1>Annapurna Mandalika</h1>
-                        <h3>Software Developer + UI/UX Designer</h3>
+                        <h3>Software Developer/College Sophomore</h3>
                     </div>
                 </section>
                 <div class="scroll">
@@ -39,13 +39,13 @@
             </div>
             <section id="info" class="container section">
                 <div class="section-title">
-                    _Info
+                    About Me:
                 </div>
+                <img class="img1" src='./images/myImage.jpg' width="240px" height="200px">
                 <p>
-                    Hello, I'm Annapurna Mandalika; software developer and UI/UX Designer. I am currently persuing a
-                    honors bachelors of science (H.B.Sc) in Computer Science with a minor in Statistics at the
-                    University of Toronto's downtown campus.
-                </p>
+                    Hi, my name is Annapurna Mandalika and I'm a computer science student studying at Seattle
+                    University.</p>
+                <p>I've interned at Microsoft twice both times on the Edge Team. </p>
             </section>
             <section id="projects" class="container section projects">
                 <div class="section-title">
@@ -90,6 +90,31 @@
             </ul>
         </div>
     </div>
+    <script type="text/javascript">
+        const project = document.getElementsByClassName('grid-item');
+        const projLen = project.length;
+        const closePopup = document.getElementById('close-popup');
+
+        function toggle() {
+            var nav = document.getElementById('main');
+            var navMobile = document.getElementById('nav-mobile');
+            nav.classList.toggle('active');
+            navMobile.classList.toggle('active');
+        }
+        function popUp() {
+            const blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            const projPop = document.getElementById('project-popup');
+            projPop.classList.toggle('active');
+        }
+        const sourceLink = document.getElementsByClassName('source-link');
+
+        const sourceLinkLen = sourceLink.length;
+
+        closePopup.addEventListener('click', () => {
+            popUp();
+        });
+    </script>
 </body>
 
 </html>
