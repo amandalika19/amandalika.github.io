@@ -1,189 +1,4 @@
-/* .sidenav {
-    height: 100%; 
-    width: 13%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 30px; 
-  }
-  
-  .sidenav a {
-      padding-left:25%;
-      padding-bottom:10px;
-      display:block;
-      color: white;
-      font-size: 45px;
-      font-family: cursiveFont;
-  }
-  
-  .sidenav a:hover {
-      color: rgb(78, 180, 228);
-      text-decoration: underline;
-  }
-  
-  body {
-      margin: 1px;
-      padding-top: 1px;
-      padding-left: 15%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-  }
-  
-  nav ul, footer ul {
-      font-family: cursiveFont;
-      padding: 0px;
-      list-style: none;
-      font-weight: bold;
-  }
-  nav ul li, footer ul li {
-      display: inline;
-      margin-right: 20px;
-  }
-  a {
-      font-family: cursive;
-      text-decoration: none;
-      color: black;
-  }
-  h1 {
-
-      font-size: 10em;
-      margin:12px;
-      font-family: cursiveFont;
-      padding-top: 70px;
-      padding-right: 30px;
-      float: left;
-  }
-  h2 {
-    padding-left:30px;
-    font-size: 6em;
-    font-family: cursiveFont;
-  }
-  h3 {
-    font-size: 3em;
-    font-family: handwritten2;
-  }
-  .img1{
-      padding-right: 30px;
-      padding-top: 40px;
-  }
-  .icon{
-      padding-left:15%;
-      height: 60px;
-  }
-  .icon:hover {
-    filter: drop-shadow(0 0 30px rgb(0, 168, 247));  
-    filter: drop-shadow(0 0 0 30px rgb(0, 168, 247)); 
-    filter: drop-shadow(0 0 0 30px rgb(0, 168, 247)); 
-     
-  }
-  p {
-      margin-left: 1rem;
-      font-size: 1.5em;
-      font-family: handwritten1;
-      line-height: 1.4em;
-      color: #333;
-  }
-  footer {
-    border-top: 1px solid #d5d5d5;
-    padding-top:20px;
-    text-decoration: none;
-    color: white;
-    font-size: .8em;
-    font-family: cursiveFont;
-}
-  
-  ul.posts { 
-      margin: 20px auto 40px; 
-      font-size: 1.5em;
-  }
-  
-  ul.posts li {
-      list-style: none;
-  }
-  
-  @font-face{
-      font-family: cursiveFont;
-      src: url(fonts/michella_garden.woff);
-  }
-  
-  @font-face{
-      font-family: handwritten1;
-      src: url(fonts/cloudy.woff);
-  }
-
-  @font-face{
-    font-family: handwritten2;
-    src: url(fonts/a_little_sunshine.woff);
-}
-  
-  @media (max-width: 1200px) {
-    .sidenav {
-    height: 100%;
-    width: 20%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 30px; 
-    }
-    body {
-      margin: 1px;
-      padding-top: 1px;
-      padding-left: 22%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-    }
-  }
-
-    @media (max-width: 775px) {
-    .sidenav {
-    height: 100%;
-    width: 20%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 30px; 
-    }
-    .sidenav a {
-      padding-left:12.5%;
-      padding-bottom:10px;
-      display:block;
-      color: white;
-      font-size: 45px;
-      font-family: cursiveFont;
-  }
-  
-  .sidenav a:hover {
-      color: rgb(78, 180, 228);
-      text-decoration: underline;
-  }
-  
-  body {
-      margin-left: 55px;
-      padding-top: 1px;
-      padding-left: 15%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-  }
-  
-  }
-  
-  
-  
-  
-  
-   */
-
-
-   /*
+ /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
@@ -208,14 +23,14 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font: cursiveFont;
-    color: #fff;
+    color: #000;
     scroll-behavior: smooth;
+    font-family:cursiveFont;
 }
 
 body {
-    background-color: #fff;
-    font: cursiveFont;
+    background-color: #000;
+    font-family: cursiveFont;
 }
 
 body:hover {
@@ -236,7 +51,7 @@ body:hover {
 .section-title {
     font-size: 2em;
     margin: 30px 0;
-    font: cursiveFont;
+    font-family: cursiveFont;
 }
 
 h2 {
@@ -277,14 +92,14 @@ header {
     -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
-    font: cursiveFont;
+    font-family: cursiveFont;
 }
 
 .middle-bar {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
     top: 14px;
 }
 
@@ -301,7 +116,7 @@ header #toggle:before {
     top: 5px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
 }
 
 header #toggle:after {
@@ -310,7 +125,7 @@ header #toggle:after {
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
 }
 
 header .name-logo {
@@ -324,6 +139,7 @@ header .name-logo {
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
+    font-size:1.2em;
 }
 
 .nav-links {
@@ -462,7 +278,7 @@ Mobile Nav/Banner
     font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
-    font: cursiveFont;
+    font-family: handwritten1;
 
 }
 
@@ -485,7 +301,7 @@ Banner
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    font: cursiveFont;
+    font-family: cursiveFont;
 
 }
 
@@ -500,14 +316,16 @@ Banner
 
 .content h1 {
     font-size: 5em;
-    font: cursiveFont;
+    font-family: cursiveFont;
+
 
 }
 
 .content h3 {
     font-size: 1.2em;
     font-weight: 300;
-    font: cursiveFont;
+    font-family: cursiveFont;
+
 
 }
 
@@ -521,7 +339,7 @@ Banner
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
-    font: handwritten1;
+    font-family: handwritten1;
 
 }
 
