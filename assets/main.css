@@ -1,20 +1,25 @@
- /*
+/*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300&display=swap');
 
+/*
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
 
 :root {
-    --swatch-color-1: #b7f0ab; 
-    --swatch-color-2: #90ec7e; 
-    --swatch-color-3: #76f05e; 
-    --swatch-color-4: #43e922; 
+    --swatch-color-1: #ff7a9b; /* rgb(237, 10, 67) */
+    --swatch-color-2: #ff3d6e; /* rgb(255, 61, 110) */
+    --swatch-color-3: #ed0a43; /* rgb(237, 10, 67) */
+    --swatch-color-4: #da0037; /* rgb(218, 0, 55) */
 
-    --mobile-nav-bg-color: var(#000);
-    --social-hover-bg-color: var(#000);
+    --mobile-nav-bg-color: var(--swatch-color-1);
+    --social-hover-bg-color: var(--swatch-color-2);
 }
 
 * {
@@ -22,14 +27,13 @@
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    color: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
     scroll-behavior: smooth;
-    font-family:cursiveFont;
 }
 
 body {
     background-color: #000;
-    font-family: cursiveFont;
 }
 
 body:hover {
@@ -50,7 +54,6 @@ body:hover {
 .section-title {
     font-size: 2em;
     margin: 30px 0;
-    font-family: cursiveFont;
 }
 
 h2 {
@@ -91,16 +94,13 @@ header {
     -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
-    font-family: cursiveFont;
-    background-color: #000;
-
 }
 
 .middle-bar {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background: #fff;
     top: 14px;
 }
 
@@ -117,7 +117,7 @@ header #toggle:before {
     top: 5px;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #fff;
 }
 
 header #toggle:after {
@@ -126,7 +126,7 @@ header #toggle:after {
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #fff;
 }
 
 header .name-logo {
@@ -134,14 +134,11 @@ header .name-logo {
     font-weight: 700;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: handwritten2;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
-    font-size:1.2em;
-    color: white;
 }
 
 .nav-links {
@@ -161,7 +158,7 @@ header .name-logo {
 }
 
 .nav-links li a {
-    padding: 10px;    
+    padding: 10px 30px;    
     text-decoration: none;
     background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
@@ -169,13 +166,7 @@ header .name-logo {
     background-repeat: no-repeat;
     background-size: 0 0;
     background-position: 0 100%;
-    width: 100%;                                           
-    letter-spacing: 1px;
-    font-size: 1.5em;
-    font-weight: 800;
-    font-family: handwritten2;
-    text-transform: uppercase;
-    color: white;
+    width: 100%;
 }
 
 @-webkit-keyframes underline-extend-up {
@@ -194,21 +185,6 @@ header .name-logo {
     100%{
         background-size: 100% 0.1em;
     }
-}
-
-@font-face{
-    font-family: cursiveFont;
-    src: url(fonts/michella_garden.woff);
-}
-
-@font-face{
-    font-family: handwritten1;
-    src: url(fonts/cloudy.woff);
-}
-
-@font-face{
-  font-family: handwritten2;
-  src: url(fonts/a_little_sunshine.woff);
 }
 
 /*
@@ -286,8 +262,6 @@ Mobile Nav/Banner
     font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: handwritten1;
-
 }
 
 /*
@@ -298,7 +272,7 @@ Banner
 
 .content-all {
     position: relative;
-    background-color: white;
+    background-color: #000;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,8 +283,6 @@ Banner
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    font-family: cursiveFont;
-
 }
 
 .banner {
@@ -324,31 +296,23 @@ Banner
 
 .content h1 {
     font-size: 5em;
-    font-family: cursiveFont;
-
-
 }
 
 .content h3 {
     font-size: 1.2em;
     font-weight: 300;
-    font-family: cursiveFont;
-
-
 }
 
 .content a {
     position: relative;
     display: inline-block;
     margin-top: 20px;
-    background: #000;
+    background: #fff;
     color: #000;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
-    font-family: handwritten1;
-
 }
 
 .scroll {
@@ -376,7 +340,7 @@ Banner
 
 #arrow::before {
     content: "";
-    background-color: #000;
+    background-color: #fff;
     width: 20px;
     height: 2px;
     position: absolute;
@@ -392,7 +356,7 @@ Banner
     width: 20px;
     height: 2px;
     position: absolute;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 5px;
     -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
@@ -437,10 +401,9 @@ Social Links
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: calc(50% - 240px/2); 
+    bottom: calc(50% - 240px/2);
     left: 0;
     z-index: 2;
-    background-color: black;
 }
 
 .social li {
@@ -457,13 +420,25 @@ Social Links
     text-decoration: none;
     margin: 10px 0 0;
     background-image: none;
-    background-color: #000;
+    background-color: none;
 }
 
 .social li a img {
     max-width: 40px;
 }
 
+
+/*
+=====================================
+About
+=====================================
+*/
+
+/*
+=====================================
+Projects
+=====================================
+*/
 .grid-container {
     display: -ms-grid;
     display: grid;
@@ -489,8 +464,6 @@ Social Links
 
 .mini-description {
     font-size: 0.7em;
-    font: cursiveFont;
-
 }
 
 .blur-container#blur.active {
@@ -562,8 +535,6 @@ Social Links
     margin-top: 10px;
     padding: 10px 8px;
     background: transparent;
-    font: cursiveFont;
-
 }
 
 .view-project {
@@ -597,7 +568,19 @@ Contact
     height: 80vh;
 }
 
-/* ==== Media Querys ==== */
+/*
+=====================================
+Resume
+=====================================
+*/
+
+
+
+/*
+=====================================
+Media Querys
+=====================================
+*/
 
 @media screen and (min-width: 1200px) {
     .container {
@@ -611,8 +594,6 @@ Contact
     #toggle {
         display: none;
     }
-
-    
 }
 
 /* .container max-width changes for 1200px
@@ -684,12 +665,6 @@ test to change for other screen sizes */
         -webkit-transition: none;
         -o-transition: none;
         transition: none;
-        font-size:1.2em;
-        font-weight: 700;
-        font-family: handwritten2;
-
-
-        color: white;
     }
 
     .filler {
