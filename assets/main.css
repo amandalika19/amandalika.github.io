@@ -1,210 +1,20 @@
-/* .sidenav {
-    height: 100%; 
-    width: 13%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 30px; 
-  }
-  
-  .sidenav a {
-      padding-left:25%;
-      padding-bottom:10px;
-      display:block;
-      color: white;
-      font-size: 45px;
-      font-family: cursiveFont;
-  }
-  
-  .sidenav a:hover {
-      color: rgb(78, 180, 228);
-      text-decoration: underline;
-  }
-  
-  body {
-      margin: 1px;
-      padding-top: 1px;
-      padding-left: 15%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-  }
-  
-  nav ul, footer ul {
-      font-family: cursiveFont;
-      padding: 0px;
-      list-style: none;
-      font-weight: bold;
-  }
-  nav ul li, footer ul li {
-      display: inline;
-      margin-right: 20px;
-  }
-  a {
-      font-family: cursive;
-      text-decoration: none;
-      color: black;
-  }
-  h1 {
-
-      font-size: 10em;
-      margin:12px;
-      font-family: cursiveFont;
-      padding-top: 70px;
-      padding-right: 30px;
-      float: left;
-  }
-  h2 {
-    padding-left:30px;
-    font-size: 6em;
-    font-family: cursiveFont;
-  }
-  h3 {
-    font-size: 3em;
-    font-family: handwritten2;
-  }
-  .img1{
-      padding-right: 30px;
-      padding-top: 40px;
-  }
-  .icon{
-      padding-left:15%;
-      height: 60px;
-  }
-  .icon:hover {
-    filter: drop-shadow(0 0 30px rgb(0, 168, 247));  
-    filter: drop-shadow(0 0 0 30px rgb(0, 168, 247)); 
-    filter: drop-shadow(0 0 0 30px rgb(0, 168, 247)); 
-     
-  }
-  p {
-      margin-left: 1rem;
-      font-size: 1.5em;
-      font-family: handwritten1;
-      line-height: 1.4em;
-      color: #333;
-  }
-  footer {
-    border-top: 1px solid #d5d5d5;
-    padding-top:20px;
-    text-decoration: none;
-    color: white;
-    font-size: .8em;
-    font-family: cursiveFont;
-}
-  
-  ul.posts { 
-      margin: 20px auto 40px; 
-      font-size: 1.5em;
-  }
-  
-  ul.posts li {
-      list-style: none;
-  }
-  
-  @font-face{
-      font-family: cursiveFont;
-      src: url(fonts/michella_garden.woff);
-  }
-  
-  @font-face{
-      font-family: handwritten1;
-      src: url(fonts/cloudy.woff);
-  }
-
-  @font-face{
-    font-family: handwritten2;
-    src: url(fonts/a_little_sunshine.woff);
-}
-  
-  @media (max-width: 1200px) {
-    .sidenav {
-    height: 100%;
-    width: 20%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 30px; 
-    }
-    body {
-      margin: 1px;
-      padding-top: 1px;
-      padding-left: 22%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-    }
-  }
-
-    @media (max-width: 775px) {
-    .sidenav {
-    height: 100%;
-    width: 20%; 
-    position: fixed; 
-    z-index: 1; 
-    top: 0; 
-    left: 0; 
-    background-color: #111; 
-    overflow-x: hidden; 
-    padding-top: 30px; 
-    }
-    .sidenav a {
-      padding-left:12.5%;
-      padding-bottom:10px;
-      display:block;
-      color: white;
-      font-size: 45px;
-      font-family: cursiveFont;
-  }
-  
-  .sidenav a:hover {
-      color: rgb(78, 180, 228);
-      text-decoration: underline;
-  }
-  
-  body {
-      margin-left: 55px;
-      padding-top: 1px;
-      padding-left: 15%;
-      width: 100vw;
-      background-color:rgb(255, 255, 255)
-  }
-  
-  }
-  
-  
-  
-  
-  
-   */
-
-
-   /*
+ /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300&display=swap');
 
-/*
-font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 
 :root {
-    --swatch-color-1: #ff7a9b; /* rgb(237, 10, 67) */
-    --swatch-color-2: #ff3d6e; /* rgb(255, 61, 110) */
-    --swatch-color-3: #ed0a43; /* rgb(237, 10, 67) */
-    --swatch-color-4: #da0037; /* rgb(218, 0, 55) */
+    --swatch-color-1: #b7f0ab; 
+    --swatch-color-2: #90ec7e; 
+    --swatch-color-3: #76f05e; 
+    --swatch-color-4: #43e922; 
 
-    --mobile-nav-bg-color: var(--swatch-color-1);
-    --social-hover-bg-color: var(--swatch-color-2);
+    --mobile-nav-bg-color: var(#000);
+    --social-hover-bg-color: var(#000);
 }
 
 * {
@@ -212,13 +22,14 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+    color: #000;
     scroll-behavior: smooth;
+    font-family:cursiveFont;
 }
 
 body {
     background-color: #000;
+    font-family: cursiveFont;
 }
 
 body:hover {
@@ -239,6 +50,7 @@ body:hover {
 .section-title {
     font-size: 2em;
     margin: 30px 0;
+    font-family: cursiveFont;
 }
 
 h2 {
@@ -279,13 +91,16 @@ header {
     -o-transition: 0.6s;
     transition: 0.6s;
     z-index: 2;
+    font-family: cursiveFont;
+    background-color: #000;
+
 }
 
 .middle-bar {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background-color: #000;
     top: 14px;
 }
 
@@ -302,7 +117,7 @@ header #toggle:before {
     top: 5px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
 }
 
 header #toggle:after {
@@ -311,7 +126,7 @@ header #toggle:after {
     bottom: 5px;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: #000;
 }
 
 header .name-logo {
@@ -319,11 +134,14 @@ header .name-logo {
     font-weight: 700;
     text-decoration: none;
     font-size: 1.2em;
+    font-family: handwritten2;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
+    font-size:1.2em;
+    color: white;
 }
 
 .nav-links {
@@ -343,7 +161,7 @@ header .name-logo {
 }
 
 .nav-links li a {
-    padding: 10px 30px;    
+    padding: 10px;    
     text-decoration: none;
     background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
@@ -351,7 +169,13 @@ header .name-logo {
     background-repeat: no-repeat;
     background-size: 0 0;
     background-position: 0 100%;
-    width: 100%;
+    width: 100%;                                           
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: handwritten2;
+    text-transform: uppercase;
+    color: white;
 }
 
 @-webkit-keyframes underline-extend-up {
@@ -370,6 +194,21 @@ header .name-logo {
     100%{
         background-size: 100% 0.1em;
     }
+}
+
+@font-face{
+    font-family: cursiveFont;
+    src: url(fonts/michella_garden.woff);
+}
+
+@font-face{
+    font-family: handwritten1;
+    src: url(fonts/cloudy.woff);
+}
+
+@font-face{
+  font-family: handwritten2;
+  src: url(fonts/a_little_sunshine.woff);
 }
 
 /*
@@ -447,6 +286,8 @@ Mobile Nav/Banner
     font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: handwritten1;
+
 }
 
 /*
@@ -457,7 +298,7 @@ Banner
 
 .content-all {
     position: relative;
-    background-color: #000;
+    background-color: white;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -468,6 +309,8 @@ Banner
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
+    font-family: cursiveFont;
+
 }
 
 .banner {
@@ -481,23 +324,31 @@ Banner
 
 .content h1 {
     font-size: 5em;
+    font-family: cursiveFont;
+
+
 }
 
 .content h3 {
     font-size: 1.2em;
     font-weight: 300;
+    font-family: cursiveFont;
+
+
 }
 
 .content a {
     position: relative;
     display: inline-block;
     margin-top: 20px;
-    background: #fff;
+    background: #000;
     color: #000;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 500;
+    font-family: handwritten1;
+
 }
 
 .scroll {
@@ -525,7 +376,7 @@ Banner
 
 #arrow::before {
     content: "";
-    background-color: #fff;
+    background-color: #000;
     width: 20px;
     height: 2px;
     position: absolute;
@@ -541,7 +392,7 @@ Banner
     width: 20px;
     height: 2px;
     position: absolute;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 5px;
     -webkit-transform: rotate(30deg);
         -ms-transform: rotate(30deg);
@@ -586,9 +437,10 @@ Social Links
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    bottom: calc(50% - 240px/2);
+    bottom: calc(50% - 240px/2); 
     left: 0;
     z-index: 2;
+    background-color: black;
 }
 
 .social li {
@@ -605,25 +457,13 @@ Social Links
     text-decoration: none;
     margin: 10px 0 0;
     background-image: none;
-    background-color: none;
+    background-color: #000;
 }
 
 .social li a img {
     max-width: 40px;
 }
 
-
-/*
-=====================================
-About
-=====================================
-*/
-
-/*
-=====================================
-Projects
-=====================================
-*/
 .grid-container {
     display: -ms-grid;
     display: grid;
@@ -649,6 +489,8 @@ Projects
 
 .mini-description {
     font-size: 0.7em;
+    font: cursiveFont;
+
 }
 
 .blur-container#blur.active {
@@ -720,6 +562,8 @@ Projects
     margin-top: 10px;
     padding: 10px 8px;
     background: transparent;
+    font: cursiveFont;
+
 }
 
 .view-project {
