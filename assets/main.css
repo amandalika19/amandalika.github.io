@@ -190,18 +190,14 @@
 * Browsers: last 4 version
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300&display=swap'); */
 
-/*
-font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 
 :root {
-    --swatch-color-1: #ff7a9b; /* rgb(237, 10, 67) */
-    --swatch-color-2: #ff3d6e; /* rgb(255, 61, 110) */
-    --swatch-color-3: #ed0a43; /* rgb(237, 10, 67) */
-    --swatch-color-4: #da0037; /* rgb(218, 0, 55) */
+    --swatch-color-1: #b7f0ab; 
+    --swatch-color-2: #90ec7e; 
+    --swatch-color-3: #76f05e; 
+    --swatch-color-4: #43e922; 
 
     --mobile-nav-bg-color: var(--swatch-color-1);
     --social-hover-bg-color: var(--swatch-color-2);
@@ -212,13 +208,14 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font: cursiveFont;
     color: #fff;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #fff;
+    font: cursiveFont;
 }
 
 body:hover {
@@ -239,6 +236,7 @@ body:hover {
 .section-title {
     font-size: 2em;
     margin: 30px 0;
+    font: cursiveFont;
 }
 
 h2 {
@@ -320,6 +318,7 @@ header .name-logo {
     font-weight: 700;
     text-decoration: none;
     font-size: 1.2em;
+    font: handwritten1;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: 0.6s;
@@ -463,6 +462,8 @@ Mobile Nav/Banner
     font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
+    font: cursiveFont;
+
 }
 
 /*
@@ -499,11 +500,15 @@ Banner
 
 .content h1 {
     font-size: 5em;
+    font: cursiveFont;
+
 }
 
 .content h3 {
     font-size: 1.2em;
     font-weight: 300;
+    font: cursiveFont;
+
 }
 
 .content a {
@@ -657,6 +662,8 @@ Social Links
 
 .mini-description {
     font-size: 0.7em;
+    font: cursiveFont;
+
 }
 
 .blur-container#blur.active {
@@ -728,6 +735,8 @@ Social Links
     margin-top: 10px;
     padding: 10px 8px;
     background: transparent;
+    font: cursiveFont;
+
 }
 
 .view-project {
