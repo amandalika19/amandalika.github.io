@@ -8,10 +8,10 @@
 
 
 :root {
-    --swatch-color-1: #b7f0ab; 
-    --swatch-color-2: #90ec7e; 
-    --swatch-color-3: #76f05e; 
-    --swatch-color-4: #43e922; 
+    --swatch-color-1: #f1f1f1; 
+    --swatch-color-2: #a7a8f1; 
+    --swatch-color-3: #8b74f5; 
+    --swatch-color-4: #3705eb; 
 
     --mobile-nav-bg-color: var(#000);
     --social-hover-bg-color: var(#000);
@@ -48,7 +48,7 @@ body:hover {
 }
 
 .section-title {
-    font-size: 2em;
+    font-size: 5em;
     margin: 30px 0;
     font-family: cursiveFont;
 }
@@ -57,7 +57,17 @@ h2 {
     padding: 20px 0;
 }
 
+p{
+    margin-left: -1em;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 30px 10px;
+    font-family: handwritten;
+}
+
 .img1{
+    margin-left: 11em;
     padding-right: 30px;
     padding-top: 40px;
 }
@@ -101,58 +111,28 @@ header {
 
 }
 
-.middle-bar {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    top: 14px;
-}
-
-header #toggle {
-    position: relative;
-    width: 30px;
-    height: 30px;;
-    cursor: pointer;
-}
-
-header #toggle:before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    width: 100%;
-    height: 2px;
-    background: white;
-}
-
-header #toggle:after {
-    content: '';
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    height: 2px;
-    background: white;
-}
 
 header .name-logo {
-    position: relative;
+    position: absolute;
+    right: 5px;
     font-weight: 700;
     text-decoration: none;
     font-size: 1.6em;
-    font-family: handwritten2;
+    font-family: handwritten;
     text-transform: uppercase;
     letter-spacing: 2px;
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
     color: white;
+
 }
 
 .nav-links {
     position: absolute;
     padding: 40px 100px;
     top: 0;
-    right: 0; 
+    left: 0; 
     -webkit-transition: 0.6s; 
     -o-transition: 0.6s; 
     transition: 0.6s;
@@ -162,12 +142,11 @@ header .name-logo {
     display: inline-block;
     list-style-type: none;
     padding-top: 11px;
-    color: white;
 
 }
 
 .nav-links li a {
-    padding: 10px;    
+    padding: 10px 30px;    
     text-decoration: none;
     background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
@@ -175,12 +154,8 @@ header .name-logo {
     background-repeat: no-repeat;
     background-size: 0 0;
     background-position: 0 100%;
-    width: 100%;                                           
-    letter-spacing: 1px;
-    font-size: 1.5em;
-    font-weight: 800;
-    font-family: handwritten2;
-    text-transform: uppercase;
+    font-size: 2em;
+    font-family: handwritten;
     color: white;
 }
 
@@ -207,13 +182,9 @@ header .name-logo {
     src: url(fonts/michella_garden.woff);
 }
 
-@font-face{
-    font-family: handwritten1;
-    src: url(fonts/cloudy.woff);
-}
 
 @font-face{
-  font-family: handwritten2;
+  font-family: handwritten;
   src: url(fonts/a_little_sunshine.woff);
 }
 
@@ -223,45 +194,13 @@ Mobile Nav/Banner
 ===================================
 */
 
-.content-all.active header #toggle:before {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-        -ms-transform: translate(-50%, -50%) rotate(45deg);
-            transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.content-all.active header .middle-bar {
-    display: none;
-}
-
-.content-all.active header #toggle:after {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-        -ms-transform: translate(-50%, -50%) rotate(-45deg);
-            transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.content-all.active {
-    -webkit-transform: translate(-400px);
-        -ms-transform: translate(-400px);
-            transform: translate(-400px);
-}
-
-.content-all.active .social {
-    -webkit-transform: translate(-400px);
-        -ms-transform: translate(-400px);
-            transform: translate(-400px);
-}
-
 #nav-mobile {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     width: 400px;
     height: 100vh;
-    background: var(--mobile-nav-bg-color);
+    background: var(#8b74f5);
     z-index: 0;
     display: -ms-grid;
     display: grid;
@@ -280,11 +219,11 @@ Mobile Nav/Banner
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-}
+} 
 
 #nav-mobile ul li {
     list-style-type: none;
-}
+} 
 
 #nav-mobile ul li a {
     text-decoration: none;
@@ -292,9 +231,9 @@ Mobile Nav/Banner
     font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: handwritten1;
-
-}
+    font-family: handwritten;
+    color: rgb(105, 202, 14);
+} 
 
 /*
 ===================================
@@ -329,14 +268,19 @@ Banner
 }
 
 .content h1 {
-    font-size: 5em;
+    margin-top: -1.5em;
+    margin-left: -1em;
+    white-space: nowrap;
+    font-size: 7em;
     font-family: cursiveFont;
 
 
 }
 
 .content h3 {
-    font-size: 1.2em;
+    margin-left: 0.3em;
+    white-space: nowrap;
+    font-size: 5em;
     font-weight: 300;
     font-family: cursiveFont;
 
@@ -351,25 +295,10 @@ Banner
     color: #000;
     padding: 10px 30px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: 500;
-    font-family: handwritten1;
+    font-family: handwritten;
 
-}
-
-.scroll {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 14px;
-    position: absolute;
-    bottom: 50px;
-    left: calc(50% - 36px/2);
-    -webkit-animation-name: up-down;
-            animation-name: up-down;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
 }
 
 #arrow {
@@ -731,9 +660,6 @@ test to change for other screen sizes */
         height: 30vh;
     }
 
-    .scroll {
-        display: none;
-    }
 }
 
 @media (hover: hover) {

@@ -20,8 +20,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#AboutMe">AboutMe:</a></li>
+                <li><a href="#Projects">Projects:</a></li>
             </ul>
         </header>
         <div id="main" class="content-all">
@@ -30,27 +30,32 @@
                 <section class="container">
                     <div class="content">
                         <h1>Annapurna Mandalika</h1>
-                        <h3>Software Developer/College Sophomore</h3>
+                        <h3>Software Developer</h3>
+                        <h3>College Sophomore</h3>
                     </div>
                 </section>
-                <div class="scroll">
-                    <div id="arrow"></div>
-                </div>
             </div>
-            <section id="info" class="container section">
-                <div class="section-title">
-                    About Me:
-                </div>
+        <div id="info" class= "content-all">
+            <section id="AboutMe" class="container section">
+                <section class="container">
+                    <div class="content">
+                        <h3>About Me</h3>
+                    </div>
+                </section>
                 <img class="img1" src='assets/images/myImage.jpg' width="240px" height="200px">
                 <p>
                     Hi, my name is Annapurna Mandalika and I'm a computer science student studying at Seattle
                     University.</p>
-                <p>I've interned at Microsoft twice both times on the Edge Team. </p>
+                <!-- <p>I've interned at Microsoft twice both times on the Edge Team. </p> -->
             </section>
-            <section id="projects" class="container section projects">
-                <div class="section-title">
-                    _Projects
-                </div>
+        </div>
+        <div id="info" class= "content-all">
+            <section id="Projects" class="container section projects">
+                <section class="container">
+                    <div class="content">
+                        <h3>Project</h3>
+                    </div>
+                </section>
                 <!-- <div class="grid-container">
                         <div id="proj-0" class="grid-item">
                             <img src="assets/images/projects/utcg.png" alt="An Image of the Project">
@@ -76,44 +81,20 @@
                             src="assets/images/GitHub-Mark-Light-32px.png"></a></li>
                 <li><a href="https://www.linkedin.com/in/amandalika19/" target="_blank"><img
                             src="assets/images/LI-In-Bug.png"></a></li>
-                <li><a href="assets/ResumePDF.pdf"><img src="assets/images/resume.png"></a></li>
+                <li><a href="assets/ResumePDF.pdf"><img src="assets/images/resume.jpg"></a></li>
                 <li><a href="mailto:amandalika19@outlook.com" target="_blank"><img src="assets/images/email.png"></a>
                 </li>
             </ul>
         </aside>
-        <div id="nav-mobile">
+        <!-- <div id="nav-mobile">
             <ul class="nav-links-mobile">
                 <li><a href="#">Home</a></li>
-                <li><a href="#info">Info</a></li>
+                <li><a href="#AboutMe">Info</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="/contact.html" target="_blank" class="temp-popup">Contact</a></li>
             </ul>
-        </div>
+        </div> -->
     </div>
     <script type="text/javascript">
-        const project = document.getElementsByClassName('grid-item');
-        const projLen = project.length;
-        const closePopup = document.getElementById('close-popup');
-
-        function toggle() {
-            var nav = document.getElementById('main');
-            var navMobile = document.getElementById('nav-mobile');
-            nav.classList.toggle('active');
-            navMobile.classList.toggle('active');
-        }
-        function popUp() {
-            const blur = document.getElementById('blur');
-            blur.classList.toggle('active');
-            const projPop = document.getElementById('project-popup');
-            projPop.classList.toggle('active');
-        }
-        const sourceLink = document.getElementsByClassName('source-link');
-
-        const sourceLinkLen = sourceLink.length;
-
-        closePopup.addEventListener('click', () => {
-            popUp();
-        });
     </script>
 </body>
 
