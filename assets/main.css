@@ -572,6 +572,21 @@ test to change for other screen sizes */
     #toggle {
         display: none;
     }
+
+    .content h1 {
+        margin-top: -1.5em;
+        margin-left: 0.4em;
+        white-space: nowrap;
+        font-size: 7em;
+        font-family: cursiveFont;
+    }
+    .content h3 {
+    margin-left: 3em;
+    white-space: nowrap;
+    font-size: 5em;
+    font-weight: 300;
+    font-family: cursiveFont;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -586,6 +601,21 @@ test to change for other screen sizes */
     .content {
         text-align: center;
     }
+
+    .content h1 {
+        margin-top: -1.5em;
+        margin-left: -0.4em;
+        white-space: nowrap;
+        font-size: 6em;
+        font-family: cursiveFont;
+    }
+    .content h3 {
+    margin-left: 0.6em;
+    white-space: nowrap;
+    font-size: 4em;
+    font-weight: 300;
+    font-family: cursiveFont;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -599,6 +629,20 @@ test to change for other screen sizes */
 
     .content {
         text-align: center;
+    }
+    .content h1 {
+        margin-top: -1.5em;
+        margin-left: -0.8em;
+        white-space: nowrap;
+        font-size: 5em;
+        font-family: cursiveFont;
+    }
+    .content h3 {
+    margin-left: 0em;
+    white-space: nowrap;
+    font-size: 4em;
+    font-weight: 300;
+    font-family: cursiveFont;
     }
 }
 
@@ -622,15 +666,21 @@ test to change for other screen sizes */
         width: 225px;
     }
 
-    header .name-logo {
-        visibility: hidden;
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-    }
-
     .filler {
         height: 35vh;
+    }
+
+    .content h1 {
+        margin-top: -1.5em;
+        margin-left: -1.4em;
+        font-size: 4em;
+        font-family: cursiveFont;
+    }
+    .content h3 {
+    margin-left: 0em;
+    font-size: 3em;
+    font-weight: 300;
+    font-family: cursiveFont;
     }
 }
 
@@ -655,6 +705,19 @@ test to change for other screen sizes */
         height: 30vh;
     }
 
+
+    .content h1 {
+        margin-top: -1.5em;
+        margin-left: -0.5em;
+        font-size: 3em;
+        font-family: cursiveFont;
+    }
+    .content h3 {
+    margin-left: 1em;
+    font-size: 2.5em;
+    font-weight: 300;
+    font-family: cursiveFont;
+    }
 }
 
 @media (hover: hover) {
