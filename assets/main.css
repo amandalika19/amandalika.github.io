@@ -271,6 +271,14 @@ Banner
      font-family: cursiveFont;
  }
 
+ .content h4 {
+    margin-left: 0.3em;
+    white-space: nowrap;
+    font-size: 5em;
+    font-weight: 300;
+    font-family: cursiveFont;
+}
+
  .content a {
      position: relative;
      display: inline-block;
