@@ -296,6 +296,40 @@ Banner
 
 }
 
+#arrow {
+    width: 40px;
+    height: 13px;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+}
+
+#arrow::before {
+    content: "";
+    background-color: #000;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    border-radius: 5px;
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    right: 0;
+}
+
+#arrow::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 5px;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+    left: 0;
+}
+
 @-webkit-keyframes up-down {
     50% {
         -webkit-transform: translateY(5px);
@@ -475,6 +509,37 @@ Social Links
 
 /*
 =====================================
+Contact
+=====================================
+*/
+
+.cta-title {
+    font-size: 2.5em;
+}
+
+.cta-banner {
+    position: relative;
+}
+
+.contact-form {
+    margin-top: 140px;
+}
+
+.contact-form iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+/*
+=====================================
+Resume
+=====================================
+*/
+
+
+
+/*
+=====================================
 Media Querys
 =====================================
 */
@@ -491,7 +556,6 @@ Media Querys
     #toggle {
         display: none;
     }
-
 }
 
 /* .container max-width changes for 1200px
@@ -509,9 +573,6 @@ test to change for other screen sizes */
         display: none;
     }
 
-    .img1{
-        margin-left: 260px;
-    }
     .content h1 {
         margin-top: -1.5em;
         margin-left: 0.4em;
@@ -525,25 +586,6 @@ test to change for other screen sizes */
     font-size: 5em;
     font-weight: 300;
     font-family: cursiveFont;
-    }
-
-    
-.nav-links {
-    position: absolute;
-    padding: 40px 100px;
-    bottom: -20px;
-    left: -100px;
-}
-
-    .nav-links li a {    
-        text-decoration: none;
-        background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
-        background-image: linear-gradient(to right, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-repeat: no-repeat;
-        font-size: 2em;
-        font-family: handwritten;
-        color: white;
     }
 }
 
@@ -560,14 +602,6 @@ test to change for other screen sizes */
         text-align: center;
     }
 
-    .img1{
-        margin-left: 200px;
-    }
-
-    p{
-        margin-left: 75px
-    }
-
     .content h1 {
         margin-top: -1.5em;
         margin-left: -0.4em;
@@ -576,29 +610,11 @@ test to change for other screen sizes */
         font-family: cursiveFont;
     }
     .content h3 {
-        margin-left: 0.6em;
-        white-space: nowrap;
-        font-size: 4em;
-        font-weight: 300;
-        font-family: cursiveFont;
-    }
-
-    .nav-links {
-        display: contents;
-        position: absolute;
-        float: left;
-    }
-    
-  
-     .nav-links li a {    
-        text-decoration: none;
-        background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
-        background-image: linear-gradient(to right, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-repeat: no-repeat;
-        font-size: 2em;
-        font-family: handwritten;
-        color: darkred;
+    margin-left: 0.6em;
+    white-space: nowrap;
+    font-size: 4em;
+    font-weight: 300;
+    font-family: cursiveFont;
     }
 }
 
@@ -614,52 +630,19 @@ test to change for other screen sizes */
     .content {
         text-align: center;
     }
-      .img1{
-        margin-left: 125px;
-    }
-
-    p{
-        margin-left: 55px;
-    }
-
     .content h1 {
         margin-top: -1.5em;
+        margin-left: -0.8em;
         white-space: nowrap;
-        font-size: 6em;
+        font-size: 5em;
         font-family: cursiveFont;
     }
     .content h3 {
-        margin-left: 0.6em;
-        white-space: nowrap;
-        font-size: 4em;
-        font-weight: 300;
-        font-family: cursiveFont;
-    }
-
-    
-.nav-links {
-    display: contents;
-    position: absolute;
-    padding: 40px 100px;
-    bottom: -20px;
-    left: -100px;
-}
-
-
-    .nav-links li {
-        display: inline-block;
-        list-style-type: none;
-    }
-
-    .nav-links li a {    
-        text-decoration: none;
-        background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
-        background-image: linear-gradient(to right, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-repeat: no-repeat;
-        font-size: 2em;
-        font-family: handwritten;
-        color: pink;
+    margin-left: 0em;
+    white-space: nowrap;
+    font-size: 4em;
+    font-weight: 300;
+    font-family: cursiveFont;
     }
 }
 
@@ -699,38 +682,6 @@ test to change for other screen sizes */
     font-weight: 300;
     font-family: cursiveFont;
     }
-
-    .img1{
-        margin-left: -20px;
-    }
-
-    p{
-        margin-left: -50px
-    }
-
-     .nav-links {
-        position: relative;
-        padding: 10px 10px 10px 10px;
-        bottom: 10px;
-        top: 10px;
-        right: 50px;
-    }
-
-    .nav-links li {
-        display: inline-block;
-        list-style-type: none;
-    }
-
-    .nav-links li a {    
-        text-decoration: none;
-        background-image: -o-linear-gradient(left, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-image: -webkit-gradient(linear, left top, right top, from(var(--swatch-color-1)), to(var(--swatch-color-4)));
-        background-image: linear-gradient(to right, var(--swatch-color-1) 0%, var(--swatch-color-4) 100%);
-        background-repeat: no-repeat;
-        font-size: 2em;
-        font-family: handwritten;
-        color: white;
-    }
 }
 
 @media (max-width: 390px) {
@@ -766,25 +717,6 @@ test to change for other screen sizes */
     font-size: 2.5em;
     font-weight: 300;
     font-family: cursiveFont;
-    }
-
-    .img1{
-        margin-left: 15px;
-    }
-
-    p{
-        margin-left: 5px;
-    }
-
-     .nav-links {
-        position: relative;
-        margin-top: 5%;
-        margin-left: 2%;
-    }
-
-    .nav-links li {
-        display: inline-block;
-        list-style-type: none;
     }
 }
 
