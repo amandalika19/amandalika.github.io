@@ -264,7 +264,7 @@ Banner
 
 .content h1 {
     margin-top: -1.5em;
-    margin-left: -1em;
+    margin-left: 1em;
     white-space: nowrap;
     font-size: 7em;
     font-family: cursiveFont;
@@ -273,7 +273,7 @@ Banner
 }
 
 .content h3 {
-    margin-left: 0.3em;
+    margin-left: 3.5em;
     white-space: nowrap;
     font-size: 5em;
     font-weight: 300;
