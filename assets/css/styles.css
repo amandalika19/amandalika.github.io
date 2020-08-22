@@ -1,5 +1,18 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+@font-face {
+  font-family: cursiveFont;
+  src: url('/assets/fonts/michella_garden.woff');
+}
+
+@font-face {
+  font-family: handwritten;
+  src: url('/assets/fonts/a_little_sunshine.woff');
+}
+
+
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3em;
@@ -87,16 +100,6 @@ img{
   display: block;
 }
 
-
-@font-face {
-  font-family: cursiveFont;
-  src: url(/assets/fonts/michella_garden.woff);
-}
-
-@font-face {
-  font-family: handwritten;
-  src: url(/assets/fonts/a_little_sunshine.woff);
-}
 
 /*===== CLASS CSS ===== */
 .section-title{
