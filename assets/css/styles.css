@@ -1,21 +1,8 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
-
-@font-face {
-  font-family: cursiveFont;
-  src: url('./fonts/michella_garden.woff');
-}
-
-@font-face {
-  font-family: handwritten;
-  src: url('./fonts/a_little_sunshine.woff');
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Questrial&display=swap');
 /*===== VARIABLES CSS =====*/
 :root{
-  --header-height: 3em;
+  --header-height: 2em;
   --font-semi: 600;
 }
 
@@ -29,7 +16,7 @@
 
 /*===== Fuente y tipografia =====*/
 :root{
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Questrial', sans-serif;
   --big-font-size: 2em;
   --h2-font-size: 1.5em;
   --normal-font-size: 0.938em;
@@ -67,22 +54,22 @@
 html{
   scroll-behavior: smooth;
   background-color: var(--background);
-
 }
 body{
   margin: var(--header-height) 0 0 0;
-  font-family: handwritten;
+  font-family: 'Lobster', cursive;
   font-size: var(--normal-font-size);
   letter-spacing: 0.1em;
   color: var(--second-color);
 }
 h1{
-  font-family: cursiveFont;
+  font-size: 3px;
+  font-family: 'Dancing Script', cursive;
   letter-spacing: 0.05em;
   margin: 0;
 }
 h2,p{
-  font-family: var(--body-font);
+  font-family: 'Questrial', sans-serif;
   letter-spacing: 0.05em;
   margin: 0;
 }
@@ -107,12 +94,10 @@ img{
   font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-top: var(--mb-2);
-  margin-bottom: var(--mb-4);
   text-align: center;
   font-size: 2.5em;
   letter-spacing: 4px;
-  font-style: oblique;
-  font-family: cursiveFont;
+  font-family: 'Dancing Script', cursive;
 }
 .section-title::after{
   position: absolute;
@@ -123,7 +108,7 @@ img{
   right: 0;
   margin: auto;
   top: 2rem;
-  background-color: var(--first-color);
+  
 }
 .section{
   padding-top: 3rem;
@@ -142,7 +127,7 @@ img{
 }
 .l-header{
   width: 100%;
-  height: 8%;
+  height: 17%;
   position: fixed;
   top: 0;
   left: 0;
@@ -155,7 +140,6 @@ img{
 .nav{
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
 }
@@ -165,8 +149,7 @@ img{
     top: var(--header-height);
     right: -100%;
     width: 70%;
-    height: 90%;
-    padding: 1rem;
+    padding: 2em;
     background-color: var(--second-color);
     transition: .5s;
   }
@@ -182,13 +165,11 @@ img{
   }
 }
 .nav__icon{
-  margin-top: 0.5em;
-  margin-right: -2em;
-  margin-left: -3em;
-  padding: 0rem;
-  justify-content: flex-start;
   font-size: 1em;
-  color: var(--second-color);
+  float: left;
+   width: 30%;
+   margin-top: 3em;
+   margin-left: -1em;
 }
 .nav__item{
   font-size: 1.25em;
@@ -245,7 +226,7 @@ img{
   align-self: center;
 }
 .home__title{
-  font-size: 4em;
+  font-size: 2.5em;
   margin-bottom: 5%;
 }
 .home__title-color{
