@@ -139,14 +139,21 @@ nav {
 	flex: 2;
 }
 .nav-links {
-  margin-top: -0.5em;
+  margin-top: 0.5em;
 	display: flex;
 	justify-content: space-around;
-	list-style: none;
+  list-style: none;
+	position: sticky;
+	display: flex;
+  justify-content: center;
+	cursor: pointer;
+	margin-left: 20px;
 }
 .nav-link {
+  justify-content: space-around;
+  padding-right: 30px;
 	color: var(--second-color);
-	font-size: 2.2em;
+	font-size: 1.5em;
 	text-decoration: none;
 }
 
@@ -251,6 +258,59 @@ nav {
 .work__img img:hover{
   transform: scale(1.1);
 }
+
+
+/* contact Section */
+#contact .contact {
+	flex-direction: row;
+	max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+  
+}
+#contact .contact-items {
+  width: 550px;
+  margin-left: 19%;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+  background-color: #b0d8f0;
+	box-shadow: 0px 0px 24px 0 #0000002c;
+	transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+  margin: 0 auto;
+  color: black;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+  margin-bottom: 5px;
+  color: black;
+  
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+  font-weight: 500;
+  color: black;
+  
+}
+/*End contact Section */
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
