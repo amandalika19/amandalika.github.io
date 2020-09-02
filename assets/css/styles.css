@@ -170,32 +170,11 @@ nav {
   position: static;
 }
 .home__title{
-  font-size: 2.6em;
+  font-size: 3.2em;
   margin-bottom: 5%;
 }
 .home__title-color{
   color: var(--first-color);
-}
-.home__social{
-  display: flex;
-  margin-bottom: -1.3em;
-  justify-content: space-between;
-  align-items: center;
-}
-.home__social-icon{
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
-.home__social-icon:hover{
-  color: var(--first-color);
-}
-.home__img{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 295px;
 }
 
 /*BUTTONS*/
