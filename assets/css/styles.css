@@ -102,13 +102,12 @@ img{
 .section-title::after{
   position: absolute;
   content: "";
-  width: 64px;
+  width: 640px;
   height: 0.18rem;
   left: 0;
   right: 0;
-  margin: auto;
-  top: 2rem;
-  
+  top: 20rem;
+
 }
 .section{
   padding-top: 3rem;
@@ -207,33 +206,33 @@ nav {
 }
 
 /* ===== SKILLS =====*/
+
 .skills__container{
   row-gap: 2rem;
   text-align: center;
-  width:
-}
-.skills__subtitle{
-  margin-bottom: var(--mb-2);
-}
-.skills__text{
-  margin-bottom: var(--mb-4);
 }
 
-.skills__icon{
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
+.skills__subtitle{
+  margin-bottom: var(--mb-1);
+  margin-left: 7%;
+  font-size: 2em;
+}
+.skills__text{
+  margin-left: 7%;
+  margin-bottom: var(--mb-2);
+  font-size: 1em;
 }
 
 .skills__img{
-  width: 10%;
-  margin-right: 10px;
-}
+  width: 280px;
+  height: 200px;
 
-.skills__img img{
-  margin-right: 10px;
+  justify-self: right;
+  float: right;
 
-  border-radius: .5rem;
+  margin-right: 5%;
+  margin-top: -2%;
+
 }
 
 /* ===== WORK =====*/
