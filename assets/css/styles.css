@@ -89,14 +89,12 @@ img{
 
 
 /*===== CLASS CSS ===== */
-.section-title{
-  position: static;
-  font-size: var(--h2-font-size);
-  color: var(--first-color);
-  margin-top: 1em;
-  text-align: center;
+.title {
+  margin: 1em;
+  text-align: center; 
   font-size: 2.5em;
   font-family: 'Dancing Script', cursive;
+  color: white;
 }
 
 /*===== LAYOUT =====*/
@@ -241,12 +239,8 @@ nav {
 #contact .contact-items {
   width: 525px;
   margin-left: 29%;
- margin-bottom: -300%;
-
 }
 #contact .contact-item {
- margin-bottom: -300%;
-
   width: 80%;
 	padding: 5px;
 	text-align: center;
@@ -261,26 +255,19 @@ nav {
 	transition: .3s ease box-shadow;
 }
 #contact .contact-item:hover {
- margin-bottom: -300%;
-
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
 #contact .icon {
- margin-bottom: -300%;
-
 	width: 70px;
   margin: 0 auto;
   color: black;
 	margin-bottom: 4px;
 }
 #contact .contact-info h1 {
- margin-bottom: -300%;
-
 	font-size: 2.5rem;
 	font-weight: 500;
   margin-bottom: 5px;
   color: black;
-  
 }
 #contact .contact-info h2 {
 	font-size: 1.3rem;
@@ -289,7 +276,6 @@ nav {
   color: black;
   
 }
-
 #contact .contact-info button {
 	font-size: 1.3rem;
   color: black;
