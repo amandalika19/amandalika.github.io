@@ -213,61 +213,44 @@ nav {
 /* ===== SKILLS =====*/
 
 .skills__container{
-  text-align: left;
+  float: left;
 }
 
 .skills__subtitle{
-  margin-top: -20%;
+  margin-top: -10%;
+  margin-right: 40%;
+  margin-bottom: -80%;
   font-size: 2em;
   float: left;
 }
-.skills__text{
+
+.skills__text p{
   margin-top: -5%;
+  margin-right: 40%;
+  margin-bottom: -90%;
   font-size: 1em;
 }
 
 .skills__img{
   width: 280px;
   height: 200px;
-  
-  margin-right: 29%;
-  margin-top: -30%;
-
-
+  margin-top: -12%;
+  margin-right: -2%;
   justify-self: right;
   float: right;
 
 }
-
-/* ===== WORK =====*/
-.work__container{
-  row-gap: 2rem;
-}
-.work__img{
-  box-shadow: 0 4px 25px rgba(14,36,49,.15);
-  border-radius: .5rem;
-  overflow: hidden;
-}
-.work__img img{
-  transition: 1s;
-  cursor: pointer;
-}
-.work__img img:hover{
-  transform: scale(1.1);
-}
-
-
 /* contact Section */
 #contact .contact {
 	flex-direction: column-reverse;
 	max-width: 1200px;
   margin: 0 auto;
   color: black;
-  
+ 
 }
 #contact .contact-items {
   width: 525px;
-  margin-left: 26%;
+  margin-left: 29%;
 }
 #contact .contact-item {
   width: 80%;
