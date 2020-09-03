@@ -93,21 +93,10 @@ img{
   position: static;
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-top: var(--mb-2);
+  margin-top: 1em;
   text-align: center;
   font-size: 2.5em;
-  letter-spacing: 4px;
   font-family: 'Dancing Script', cursive;
-}
-.section-title::after{
-  position: absolute;
-  content: "";
-  width: 640px;
-  height: 0.18rem;
-  left: 0;
-  right: 0;
-  top: 20rem;
-
 }
 
 /*===== LAYOUT =====*/
@@ -217,24 +206,25 @@ nav {
 }
 
 .skills__subtitle{
-  margin-top: -10%;
+  margin-top: -3%;
   margin-right: 40%;
-  margin-bottom: -80%;
+  margin-bottom: -50%;
   font-size: 2em;
   float: left;
 }
 
-.skills__text p{
-  margin-top: -5%;
+.skills__text{
+  margin-top: 3%;
   margin-right: 40%;
-  margin-bottom: -90%;
+  margin-bottom: -2%;
   font-size: 1em;
+  color: white;
 }
 
 .skills__img{
   width: 280px;
   height: 200px;
-  margin-top: -12%;
+  margin-top: -15%;
   margin-right: -2%;
   justify-self: right;
   float: right;
@@ -246,18 +236,21 @@ nav {
 	max-width: 1200px;
   margin: 0 auto;
   color: black;
- 
+  margin-bottom: -300%;
 }
 #contact .contact-items {
   width: 525px;
   margin-left: 29%;
+ margin-bottom: -300%;
+
 }
 #contact .contact-item {
+ margin-bottom: -300%;
+
   width: 80%;
 	padding: 5px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 10px;
 	margin: 10px;
 	display: flex;
 	justify-content: center;
@@ -268,15 +261,21 @@ nav {
 	transition: .3s ease box-shadow;
 }
 #contact .contact-item:hover {
+ margin-bottom: -300%;
+
 	box-shadow: 0px 0px 5px 0 #0000002c;
 }
 #contact .icon {
+ margin-bottom: -300%;
+
 	width: 70px;
   margin: 0 auto;
   color: black;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 }
 #contact .contact-info h1 {
+ margin-bottom: -300%;
+
 	font-size: 2.5rem;
 	font-weight: 500;
   margin-bottom: 5px;
