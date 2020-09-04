@@ -209,10 +209,15 @@ nav {
   margin-bottom: -50%;
   font-size: 2em;
   float: left;
+  color: #7fc9f7;
+  text-decoration-color: black;
+  text-decoration: underline;
 }
 
 .skills__subtitle a:visited{
-  color: #b0d8f0;
+  color: #7fc9f7;
+  text-decoration-color: black;
+  text-decoration: underline;
 }
 
 .skills__text{
