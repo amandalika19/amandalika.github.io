@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Questrial&display=swap');
+
+body {
+    background-color: #15181f;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 2em;
+}
+
+.navbar {
+    padding-top: 0;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.square {
+    width: 400px;
+    height: 300px;
+    padding: 35px;
+    background: #403c41;
+    float: left;
+    margin: 2%;
+    border-radius: 15%;
+    position: relative;
+    transition: transform 400ms;
+}
+
+.square p {
+    margin-bottom: 0;
+}
+
+.square:hover{
+    background: #7b7a88;
+    transform: rotateY(10deg);
+}
+
+.front {
+    padding-top: 120px;
+}
+
+.logos {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#me {
+    max-height: 200px;
+    border-radius: 10%;
+}
+
+#bio {
+    padding-right: 7%;
+    padding-top: 2%;
+}
+
+#experienceHeader {
+    letter-spacing: 1.5px;
+    margin-left: 17%;
+    font-family: 'Lobster';
+}
+
+#cards {
+    margin-left: 29%;
+    max-width: 1000px;
+    align-content: space-between;
+}
+
+.span.typed-text {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.span.cursor {
+    display: inline-block;
+    color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: #ccc; }
+    99% { background-color: #ccc; }
+    100%  { background-color: #ccc; }
+}

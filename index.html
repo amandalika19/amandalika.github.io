@@ -1,128 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap reference -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+    <!-- fullpage.js reference -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
 
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
 
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Annapurna Mandalika</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <title>Annapurna's Portfolio</title>
-</head>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul id="menu" class="navbar-nav ml-auto">
+            <li data-menuanchor="home" class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li data-menuanchor="about" class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li data-menuanchor="experience" class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li data-menuanchor="projects" class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-<body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#home">Home</a></li>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title"><span class="home__title-color">Annapurna</span><br> College
-                    Sophomore <br> Computer Science Major</h1>
+      <div id="fullpage" class="container-fluid">
+        <!-- home section -->
+        <div class="section active">
+          <div class="row">
+            <div class="col-sm-6 d-flex justify-content-center">
+              <h1>Hi, my name is Annapurna Mandalika</h3>
+            </div>
+          </div>
+          <span
+            class="typed-text"
+            style="margin-left: 3.5em; font-size: 2.25em"
+          ></span
+          ><span class="cursor">&nbsp;</span>
+        </div>
+        <!-- about me section -->
+        <div class="section">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img id="me" src="assets/myImage.jpg" />
             </div>
 
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about section " id="about">
-            <h2 class="title">About</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/images/myImage.jpg" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subtitle">Annapurna Mandalika</h2>
-                    <p class="about__text">Hi! My name is Annapurna Mandalika. I'm a sophomore at Seattle University
-                        studying computer science.
-                        During my free time, I like to work on projects beyond what I've learned in my classes. </p>
-                </div>
+            <div id="bio" class="col-md-6">
+              <h3>Hi! My name is Annapurna Mandalika.</h3>
+              <h3>
+                I'm a sophomore at Seattle University studying computer science.
+                During my free time, I like to work on projects beyond what I've
+                learned in my classes.
+              </h3>
             </div>
-        </section>
-        <!--===== Projects =====-->
-        <section class="skills section" id="projects">
-            <h2 class="title">Projects</h2>
-            <div class="skills bd-grid"> 
-        <h2 class="skills__subtitle"><a href="https://chrome.google.com/webstore/detail/swift-shopping/khlfeijkniiigieaobckdmkmjcddbbad?utm_source=chrome-ntp-icon" target="_blank">Swift-Shopping</a></h2>        
-        <p class="skills__text">Shopping Extension that allows users to save their favorite links</p>
-                <p class="skills__text">HTML, CSS, JavaScript</p>
-                <video class="skills__img " controls loop>
-                    <source src="./assets/images/ExtensionVideo.mp4" type="video/mp4">
-                </video>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h2 class="skills__subtitle">Hang</h2>
-                <p class="skills__text">Web-Application that allows users to find collaboration times between each
-                    other. </p>
-                <p class="skills__text">HTML, CSS, JavaScript, ReactJS</p>
+          </div>
+        </div>
+        <!-- experience section -->
+        <div class="section">
+          <div id="cards">
+            <h3 id="experienceHeader">Technical Experience</h3>
 
+            <div id="floopCard" class="square">
+              <div class="front">
+                <h4>
+                  <img
+                    class="logos"
+                    src="assets/Floop Logo.png"
+                    alt="Floop Logo"
+                  />Floop Edu.
+                </h4>
+                <p><i>Software Engineering Intern</i></p>
+                <p>September 2020 - PRESENT</p>
+              </div>
+
+              <div class="back hide">
+                <h4>Accessibility</h4>
+                <ul>
+                  <li>Conduct accessibility audit</li>
+                  <li>Resolve web app accessibility issues</li>
+                  <li>Implement keyboard-only functionality</li>
+                </ul>
+                <p><i>JavaScript, React</i></p>
+              </div>
             </div>
-        </section>
 
-        <!--===== Contact =====-->
-        <section id="contact">            
-            <div class="contact container">
-                <div>
-                    <h1 class="title">Contact Info</h1>
-                </div>
-                <div class="contact-items">
-                    <div class="contact-item">
-                        <div class="bx bx-mail-send"></div>
-                        <div class="contact-info">
-                            <h1>Email</h1>
-                            <h2>amandalika19@outlook.com</h2>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="bx bxl-linkedin"></div>
-                        <div class="contact-info">
-                            <h1>Linkedin</h1>
-                            <h2>https://www.linkedin.com/in/amandalika/</h2>
-                            <button><a href="https://www.linkedin.com/in/amandalika/" target="_blank"> See My Linkedin!</a></button>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="bx bxl-github"></div>
-                        <div class="contact-info">
-                            <h1>Github</h1>
-                            <h2>https://github.com/amandalika19</h2>
-                            <button><a href="https://www.github.com/amandalika19/" target="_blank">See My Github!</a></button>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-info">
-                            <button>
-                                <a class="button" href="./assets/ResumePDF.pdf">Access my full resume here!</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            <div id="ms1Card" class="square">
+              <div class="front">
+                <h4>
+                  <img
+                    class="logos"
+                    src="assets/Microsoft Logo.png"
+                    alt="Microsoft Logo"
+                  />Microsoft
+                </h4>
+                <p><i>High School Intern</i></p>
+                <p>June 2019 - August 2019</p>
+              </div>
+
+              <div class="back hide">
+                <h4>Edge Browser Services</h4>
+                <ul>
+                  <li>Created 5 instructional coding videos</li>
+                  <li>Developed a 3D web-based game using Babylon.js</li>
+                </ul>
+                <p><i>HTML, JavaScript, TypeScript</i></p>
+              </div>
             </div>
-        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <div id="ms2Card" class="square">
+              <div class="front">
+                <h4>
+                  <img
+                    class="logos"
+                    src="assets/Microsoft Logo.png"
+                    alt="Microsoft Logo"
+                  />Microsoft
+                </h4>
+                <p><i>High School Intern</i></p>
+                <p>June 2018 - August 2018</p>
+              </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-</body>
+              <div class="back hide">
+                <h4>Web Platform</h4>
+                <ul>
+                  <li>Created 5 instructional coding videos</li>
+                  <li>Developed a 3D web-based game using Babylon.js</li>
+                </ul>
+                <p><i>HTML, JavaScript, TypeScript</i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- projects section -->
+        <div class="section">
+          <h1>Projects - Coming Soon!</h1>
+        </div>
+      </div>
+    </div>
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
 </html>
