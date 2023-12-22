@@ -40,7 +40,7 @@ var myFullpage = new fullpage('#fullpage', {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["College Sophomore", "Software Developer", "Seattle Native"];
+const textArray = ["Grad Student", "Software Developer", "Seattle Native"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
